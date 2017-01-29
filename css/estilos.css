@@ -1,0 +1,227 @@
+/***************/
+body{
+  font-size: 12px;
+}
+.busca, 
+.menu-departamentos {
+  background-color: #dcdcdc;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  margin-right: 10px;
+  width: 230px;
+}
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+  margin: 10px;
+}
+
+.menu-departamentos ul{
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+.menu-departamentos li {
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+}
+.menu-departamentos a {
+  color: #3333AA;
+  text-decoration: none;
+}
+/*3*/
+.busca input {
+  vertical-align: middle;
+}
+
+.busca input[type=search] {
+  width: 170px;
+}
+/* faz os dois flutuarem, logo a busca vai flutuar a esquerda de departamentos*/
+.busca, 
+.menu-departamentos {
+  float: left;
+}
+/*"apaga" a flutuação de seus itens vizinhos*/
+.menu-departamentos {
+    clear: left;
+}
+.destaque {
+  margin-top: 10px;
+}
+.menu-departamentos {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*********/
+.painel {
+  margin: 10px 0;
+  padding: 10px;
+  width: 445px;
+}
+.novidades {
+  float: left;
+}
+
+.mais-vendidos {
+  float: right;
+}
+
+.painel ol{
+ padding: 0px; 
+}
+
+.painel li {/* colocar vários em cada linha*/
+  display: inline-block;/* tornar inline*/
+  vertical-align: top;
+  width: 140px;
+
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+.painel h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.painel a {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  width: inherit;
+}
+.painel figure{
+  padding: 0px;
+  vertical-align: top;
+  width: inherit;
+  margin: 0 auto;
+}
+
+.novidades {
+  background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+  background-color: #dcdcf5;
+}
+
+
+/*********/
+footer {
+  background-image: url(../img/fundo-rodape.png);
+  clear: both;
+}
+.social a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+
+  /* image replacement */
+  display: block;
+  text-indent: -9999px;  
+}
+
+footer {
+  padding: 20px 0;
+  font-size: 12px;
+}
+
+footer .container {
+  position: relative;
+}
+.social a[href*="facebook.com"] {
+  background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+  background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+  background-image: url(../img/googleplus.png);
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  right: 0;
+}
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+
+
+/*********************/
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+.menu-opcoes a:active {
+     color: #867dc6;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+}
+.menu-departamentos li ul {
+  display: none;
+}
+.menu-departamentos li:hover ul {
+  display: block;
+}
+.menu-departamentos li li a:before {
+  content: '- ';
+}
+
+
+
+/*****BORDAS***/
+.painel {
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px #999;
+  box-shadow: inset 1px 1px 4px #999;/*borda interna*/
+}
+.painel h2 {
+  text-shadow: 3px 3px 2px #FFF;
+}
+.busca {/*bordas diferentes nos lados*/
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.novidades {
+  background: linear-gradient(to right,#f5dcdc, #bebef4);
+}
+.mais-vendidos {
+  background: linear-gradient(to right,#bebef4, #f5dcdc);
+}
+
+/*so sombra e depois um efeito fade*/
+.painel li:hover {/
+  box-shadow: 0 0 5px #333;
+  transition: box-shadow 0.7s;
+}
+.painel li:hover {
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px #333;
+  transform:scale(1.2) rotate(-5deg);
+  transition: 0.7s ease-in;
+}
+.painel li:nth-child(2n):hover {
+  transform: scale(1.2) rotate(5deg);
+}
+/*volta da animação*/
+.painel li{
+  transition:0.7s ease-out;
+}
+
