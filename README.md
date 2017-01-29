@@ -1,5 +1,9 @@
 # MirrorFashionCaelum
 
-Learning PHP, CSS and HTML with free Caelum's handbook.
+Learning PHP, CSS, HTML and JS with free Caelum's handbook.
 
-Aprendendo PHP, CSS e HTML com apostila gratuita da Caelum.
+It is possible to view the static version of this project on https://marcielleal.github.io/MirrorFashionCaelum/index.html.
+
+Aprendendo PHP, CSS, HTML e JS com apostila gratuita da Caelum.
+
+É possível ver a versão estática da deste projeto em https://marcielleal.github.io/MirrorFashionCaelum/index.html.
